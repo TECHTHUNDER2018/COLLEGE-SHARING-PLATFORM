@@ -1,0 +1,179 @@
+.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colleges | Scholar Hub</title>
+    <link rel="stylesheet" href="style/college.css">
+</head>
+<body data-theme="light">
+    <!-- Header (copied from landing page) -->
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <h1>SCHOLAR HUB</h1>
+            </div>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="landing.html">Home</a></li>
+                    <li><a href="gallery.html">Notes Gallery</a></li>
+                    <li><a href="college.html">Colleges</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="search-bar">
+                <input type="text" placeholder="Search colleges...">
+                <button type="submit">Search</button>
+            </div>
+            <div class="dark-mode-toggle">
+                <button id="darkModeButton">🌙</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Colleges Section -->
+    <main>
+        <!-- College Filters -->
+        <section class="college-filters">
+            <select id="collegeType">
+                <option value="">All Colleges</option>
+                <option value="iit">IITs</option>
+                <option value="nit">NITs</option>
+                <option value="medical">Medical Colleges</option>
+                <option value="private">Private Universities</option>
+            </select>
+            <select id="collegeLocation">
+                <option value="">All Locations</option>
+                <option value="north">North India</option>
+                <option value="south">South India</option>
+                <option value="east">East India</option>
+                <option value="west">West India</option>
+            </select>
+        </section>
+
+        <!-- Colleges Grid -->
+        <section class="colleges-grid">
+            <!-- IITs -->
+            <div class="college-card" data-type="iit">
+                <img src="images/iitdelhi.jpg" alt="IIT Delhi">
+                <h3>IIT Delhi</h3>
+                <p>Available Resources: 250+</p>
+                <button class="view-resources">View Resources</button>
+            </div>
+            <div class="college-card" data-type="iit">
+                <img src="images/iitbombay.jpg" alt="IIT Bombay">
+                <h3>IIT Bombay</h3>
+                <p>Available Resources: 300+</p>
+                <button class="view-resources">View Resources</button>
+            </div>
+
+            <!-- NITs -->
+            <div class="college-card" data-type="nit">
+                <img src="images/nitpatna.jpg" alt="NIT Patna">
+                <h3>NIT Patna</h3>
+                <p>Available Resources: 200+</p>
+                <button class="view-resources">View Resources</button>
+            </div>
+            <div class="college-card" data-type="nit">
+                <img src="images/nitkuru.jpg" alt="NIT Kurukshetra">
+                <h3>NIT Kurukshetra</h3>
+                <p>Available Resources: 150+</p>
+                <button class="view-resources">View Resources</button>
+            </div>
+
+            <!-- Medical Colleges -->
+            <div class="college-card" data-type="medical">
+                <img src="images/aiimsdelhi.jpg" alt="AIIMS Delhi">
+                <h3>AIIMS Delhi</h3>
+                <p>Available Resources: 180+</p>
+                <button class="view-resources">View Resources</button>
+            </div>
+        </section>
+
+        <!-- Student Profile Section -->
+        <section class="student-profile" id="studentProfile">
+            <div class="profile-header">
+                <img src="images/student1.jpg" alt="Student Profile" class="profile-pic">
+                <div class="profile-info">
+                    <h2>Nishant Kumar</h2>
+                    <p>NIT Patna | Computer Science</p>
+                    <button class="follow-btn" id="followButton">Follow</button>
+                </div>
+            </div>
+            <div class="resource-stats">
+                <div class="stat-item">
+                    <h4>Uploaded Notes</h4>
+                    <p>25</p>
+                </div>
+                <div class="stat-item">
+                    <h4>Question Papers</h4>
+                    <p>15</p>
+                </div>
+                <div class="stat-item">
+                    <h4>Projects</h4>
+                    <p>8</p>
+                </div>
+            </div>
+            <div class="recent-uploads">
+                <h3>Recent Uploads</h3>
+                <ul>
+                    <li>Data Structures Notes</li>
+                    <li>Operating Systems Question Paper</li>
+                    <li>Web Development Project</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer (copied from landing page) -->
+    <footer class="footer">
+
+        <!-- Copy the footer content from landing.html -->
+
+
+
+        <footer class="footer">
+            <div class="footer-container">
+                <!-- Branding -->
+                <div class="footer-branding">
+                    <h3>SCHOLAR HUB</h3>
+                    <div class="social-icons">
+                        <a href="#"><img src="images/instagram.jpg" alt="Instagram"> </a>
+                        <a href="#"><img src="images/x.jpg" alt="Twitter"></a>
+                        <a href="#"><img src="images/linkedin.jpg" alt="LinkedIn"></a>
+                    </div>
+                </div>
+        
+                <!-- Quick Links -->
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Gallery</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+        
+                <!-- Newsletter Subscription -->
+                <div class="footer-newsletter">
+                    <h3>Subscribe to Our Newsletter</h3>
+                    <form>
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        
+            <!-- Copyright -->
+            <div class="footer-bottom">
+                <p>&copy; 2025 Scholar Hub. All rights reserved. | <a href="#">Terms of Use</a></p>
+            </div>
+    </footer>
+
+    <script src="scripts/college.js"></script>
+</body>
+</html>
